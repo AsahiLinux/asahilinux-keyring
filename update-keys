@@ -69,6 +69,8 @@ ${GPG} --import-ownertrust < asahilinux-trusted 2>/dev/null
 #	fi
 #done < packager-revoked-keyids
 
+touch asahilinux-revoked
+
 #cat master/*.asc packager/*.asc packager-revoked/*.asc > asahilinux.gpg
 cat master/*.asc > asahilinux.gpg
 
